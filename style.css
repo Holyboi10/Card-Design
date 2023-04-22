@@ -19,6 +19,8 @@ body{
     margin-left: 100px;
 }
 
+
+
 /* style for background png  */
 #position{
     position: absolute;
@@ -29,6 +31,12 @@ body{
     position: relative;
     z-index: -999;
     height: 100vh;
+}
+
+.bgm{
+    display: none;
+    width: 100%;
+    height: 35%;
 }
 
 /* style for the cards display  */
@@ -87,7 +95,6 @@ body{
 
 #input-short{
     width: 60px;
-    /* margin-left: 0px; */
 }
 
 #input-short1{
@@ -106,7 +113,6 @@ body{
     height: 40px;
     border-radius: 5px;
     border: none;
-    margin-top: 10px;
 }
 
 #label{
@@ -123,7 +129,68 @@ body{
 /* media qeury for screen size 375px */
 
 @media screen and (max-width:375px) {
+
+    /* style for background png  */
+
+    .bg{
+        display: none;
+    }
+
+    .bgm{
+        display:grid;
+        z-index: -1;
+    }
+
+    #card{
+        display: block;
+        margin-left: 0%;
+    }
+
+    /* style for the cards display  */
+    
     .card-left{
-        background-image: none;
+        position: relative;
+        position: absolute;
+        top: 0%;
+        left: 0;
+    }
+
+    .card-front{
+        width: 250px;
+        top: 20%;
+        left: 20%;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #front{
+        border-radius: 7px;
+    }
+
+    .card-back{
+        width: 250px;
+        top: 9%;
+        left: 80%;
+    }
+
+/* style for the input of info */
+
+    .form{
+        margin-left: 10%;
+        margin-top: 30%;
+        padding: 0%;
+    }
+
+
+    .form input{
+        width: 350px;
+        height: 50px;
+    }
+
+    #confirm{
+        width: 350px;
+        height: 50px;
     }
 }
+
+/* blessings */
