@@ -1,72 +1,129 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+ *{
     margin: 0;
     padding: 0;
 }
 body{
     width: 100vw;
     height: 100vh;
-    font-size: 16px;
+    Font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 #card{
-    /* border: 1px solid green; */
     height: 600px;
     width: 80%;
     display: flex;
     margin-top: 50px;
     margin-left: 100px;
 }
+
+/* style for background png  */
+#position{
+    position: absolute;
+}
+
+.bg{
+    width: 100%;
+    position: relative;
+    z-index: -999;
+    height: 100vh;
+}
+
+/* style for the cards display  */
+
 .card-left{
-    /* border: 1px solid red; */
     height: 100%;
     width: 30%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: relative;
-    background-image: url(bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card-right{
-    /* border: 1px solid blue; */
-    width: 70%;
-}
+
 .card-front{
-    /* border: 1px solid red; */
     height: 160px;
     width: 100%;
     position: absolute;
-    top: 120;
-    left: 120;
-    background-color: white;
+    top: 90;
+    left: 90;
 }
 .card-back{
-    /* border: 1px solid blueviolet; */
     height: 160px;
     width: 100%;
     position: absolute;
     top: 320;
     left: 150;
-    background-color: white;
 }
 #front{
     width: 100%;
-    height: 100%;
+    border-radius: 5px;
 }
+
+/* style for the input of info */
+
+.card-right{
+    width: 70%;
+}
+
 .form{
     margin-left: 250px;
     padding: 30px;
-    /* border: 1px solid red; */
     margin-top:150px;
     font-size: smaller;
 }
+
 .form input{
     width: 300px;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     border: 1px solid gainsboro;
     padding: 10px;
 }
+
+
 #input-short{
     width: 60px;
+    /* margin-left: 0px; */
+}
+
+#input-short1{
+    width: 60px;
+}
+
+#input-short2{
+    margin-right: 70px;
+}
+
+
+#confirm {
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+#label{
+   display: flex;
+   justify-content: space-between; 
+   width: 200px;
+}
+
+#lab{
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* media qeury for screen size 375px */
+
+@media screen and (max-width:375px) {
+    .card-left{
+        background-image: none;
+    }
 }

@@ -7,32 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="position">
+        <img class="bg" src="bg-main-desktop.png" alt="">
+    </div>
     <div id="card">
+    
         <div class="card-left">
             <div class="card-front">
                 <img src="card.jpg" id="front">
-
+    
             </div>
             <div class=" card-back">
                 <img src="bg-card-back.png" id="front">
-
+    
             </div>
-
+    
         </div>
         <div class="card-right">
             <div class="form">
-                <label for="">CARDHOLDER NAME</label><br>
-                <input type="text" placeholder="e.g Jane &ensp;Appleseed "><br><br>
-                <label for="">CARD NUMBER</label><br>
+                <h5 id="lab">CARDHOLDER NAME</h5>
+                <input class="ace" type="text" placeholder="e.g Jane &ensp;Appleseed "><br><br>
+                <h5 id="lab">CARD NUMBER</h5>
                 <input type="text" placeholder="e.g. 1234 &ensp;5678 &ensp;9123 &ensp;0000"><br><br>
-                <label for="">EXP. DATE &ensp; (MM/YY)</label> &emsp; &ensp;&emsp; &ensp;&emsp;  <label for="">CVV</label><br>
-                <input type="text" id="input-short" placeholder="MM">&ensp;<input  placeholder="YY" type="text"id="input-short"  >&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;&emsp; 
-                  <input type="text" id="input-short" placeholder="e.g.123" style="width: 100px;"><br><br>
-                <button style="background-color: rgb(58, 7, 58);color: white; width: 300px; height: 35px; border-radius: 10px; border: none;">CONFIRM</button>
+                <div id="label"><h5 id="lab">EXP. DATE </h5> <h5 id="lab"> (MM/YY) </h5> <h5 id="lab">CVV</h5></div>
+                <input type="text" id="input-short" placeholder="MM">&ensp;<input placeholder="YY" type="text"
+                    id="input-short1">&emsp;&ensp;&emsp;&ensp;
+                <input type="text" id="input-short2" placeholder="e.g.123" style="width: 100px;"><br><br>
+                <button id="confirm">CONFIRM</button>
             </div>
-
+    
         </div>
     </div>
-    
+   
 </body>
 </html>
